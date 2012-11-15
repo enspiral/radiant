@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'rake/testtask'
 require 'rdoc/task'
-require 'rake/gempackagetask'
+#require 'rake/gempackagetask'
 require 'radiant'
 
 PKG_NAME = 'radiant'
@@ -73,10 +73,10 @@ namespace 'radiant' do
     s.files = files.to_a
   end
 
-  Rake::GemPackageTask.new(spec) do |pkg|
-    pkg.need_zip = true
-    pkg.need_tar = true
-  end
+  #Rake::GemPackageTask.new(spec) do |pkg|
+    #pkg.need_zip = true
+    #pkg.need_tar = true
+  #end
 
   task :gemspec do
     File.open('radiant.gemspec', 'w') {|f| f.write spec.to_ruby }
