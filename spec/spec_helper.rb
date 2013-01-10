@@ -16,13 +16,13 @@ unless defined? SPEC_ROOT
     require env
   end
 
-  # unless defined? RADIANT_ROOT
-  #   if env_file = ENV["RADIANT_ENV_FILE"]
-  #     require env_file
-  #   else
-  #     require File.expand_path(SPEC_ROOT + "/../config/environment")
-  #   end
-  # end
+  #unless defined? RADIANT_ROOT
+    #if env_file = ENV["RADIANT_ENV_FILE"]
+      #require env_file
+    #else
+      #require File.expand_path(SPEC_ROOT + "/../config/environment")
+    #end
+  #end
   
   require 'spec'
   require 'spec/rails'
